@@ -35,6 +35,7 @@ secrets.toml
 .DS_Store
 
 # IA e Dados (Para não subir arquivos pesados)
+data/
 models/
 data/raw/
 data/processed/

@@ -1,12 +1,16 @@
+import os
 from datetime import datetime
 from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime, ForeignKey, JSON
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DB_PATH = os.path.join(BASE_DIR, "data", "financeiro.db")
+
 # 1. Configuração Inicial
 Base = declarative_base()
 # O SQLite criará um arquivo chamado 'financeiro.db' na sua pasta
-engine = create_engine('sqlite:///financeiro.db', echo=True)
+engine = create_engine(f'sqlite:///{DB_PATH}', echo=True)
 Session = sessionmaker(bind=engine)
 
 # 2. Definição das Tabelas
