@@ -1,0 +1,42 @@
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+bin/
+include/
+lib/
+share/
+
+# Python (Cache e Compilação)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Variáveis de Ambiente e Segredos
+.env
+.flaskenv
+secrets.toml
+
+# Banco de Dados (Arquivos locais de teste)
+*.db
+*.sqlite
+*.sqlite3
+
+# Streamlit (Configurações locais e cache)
+.streamlit/config.toml
+.streamlit/static/
+
+# IDEs (VS Code, PyCharm)
+.vscode/
+.idea/
+.DS_Store
+
+# IA e Dados (Para não subir arquivos pesados)
+models/
+data/raw/
+data/processed/
+*.onnx
+*.pkl
+*.bin
