@@ -1,4 +1,5 @@
 # Ambientes Virtuais
+assistant/
 venv/
 .venv/
 env/
